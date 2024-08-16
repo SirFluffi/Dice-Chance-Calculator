@@ -1,6 +1,6 @@
 #include "header.hpp"
 
-void dice(int chance, int amount, int instance, std::promise<int> promise) {
+void dice(int chance, unsigned int amount, unsigned int instance, std::promise<int> promise) {
 	int hit = 0, high = 0, tAmount = amount, tInstance = instance;
 	std::mt19937 generator(static_cast<unsigned int>(std::chrono::high_resolution_clock::now().time_since_epoch().count())); //mersenne twister engine, seeding with chrono
 	std::uniform_int_distribution<int> distribution(1, 100);
