@@ -2,7 +2,7 @@
 
 
 int main() {
-	int ch, attempts, amount, threadCount = 4;
+	unsigned int ch, attempts, amount, threadCount = 4;
 	std::promise<int> promise1;
 	std::future<int> future1 = promise1.get_future();
 	std::promise<int> promise2;
