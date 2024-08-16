@@ -24,14 +24,14 @@ void dice(int chance, int amount) {
 			}
 		}
 		amount--;
-		if (amount % 100000000 == 0)
+		if (amount % 10000000 == 0)
 		{
-			std::cout << amount << " Dice Throws Remaining" << std::endl; // to let you know that the program didnt get hung up x3
+			std::cout << amount << " Attempts Remaining" << std::endl; // to let you know that the program didnt get hung up x3
 		}
 		miss = false;
 	}
 	system("cls"); //fancy shmancy expensive syscall to clear up the console for the results, speed is important but so is presentation ^^
-	std::cout << "Dice thrown: " << tAmount << std::endl; // self explanitory :3
+	std::cout << "Amount of attempts for consecutive hits: " << tAmount << std::endl; // how many attempts were made to get a new high score
 	std::cout << "Chance: " << chance - 1 << "%" << std::endl; //chance to hit the wanted face, die face, not an actual face
 	std::cout << "Most consecutive Hits: " << high << std::endl; // amount of 1 throws on a once sided die with current chances in a row
 }
