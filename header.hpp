@@ -7,6 +7,6 @@
 #include <random>
 #include <algorithm>
 
-void dice(int chance, int amount, int instance, std::promise<int> promise);
+void dice(int chance, unsigned int amount, unsigned int instance, std::promise<int> promise);
 
 #endif // !HEADER_HPP
