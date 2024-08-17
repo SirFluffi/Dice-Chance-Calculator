@@ -12,7 +12,7 @@ int main() {
 	std::promise<int> promise4;
 	std::future<int> future4 = promise4.get_future();
 	std::cout << "There is no error handleing, so please only use valid numbers :3" << std::endl;
-	std::cout << "Enter the Chance to hit (0-99)";
+	std::cout << "Enter the Chance to hit (0-100)";
 	std::cin >> ch;
 	std::cout << "Amount of dice thrown per Attempt (0 - 4294967294)" << std::endl;
 	std::cin >> amount;
